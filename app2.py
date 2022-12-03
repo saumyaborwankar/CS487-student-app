@@ -382,8 +382,6 @@ def time_managment():
 
     # st.markdown("<br><hr><center>Made with ❤️ by <a href='mailto:ralhanprateek@gmail.com?subject=ToDo WebApp!&body=Please specify the issue you are facing with the app.'><strong>Prateek Ralhan</strong></a></center><hr>", unsafe_allow_html=True)
     if(time_fin_hel=="Timer"):
-        # choice2 = st.sidebar.selectbox("Pomodoro", ["Start"])
-        # if(choice2=="start"):
         time_minutes = st.number_input('Enter the time in minutes ', min_value=1, value=25)
         time_in_seconds = time_minutes * 60
         if st.button("START"):
@@ -392,29 +390,7 @@ def time_managment():
     if(time_fin_hel=="Priority"):
         st.checkbox('Submit financial documents')
         st.checkbox('Apply scholarship')
-    # with col2:
-    #     if st.button('Add Task'):
-    #         title = st.text_input('Task Name', ' ')
-    #         st.write('The current movie title is', title)
-    #         if st.button("Add"):
-    #             print("kkkk")
-    #             df=pd.read_csv("tasks.csv")
-    #             df['task'].append(title)
-    #             df['value'].append(False)
-    #             df.to_csv("tasks.csv")
-    #             # tasks.append(title)
-    #         # st.write("Add Task")
-    # with col3:
-    #     if st.button('Set Priority'):
-    #         st.write("set Priority")
-    # st.write()
-    # st.write("Current Tasks")
-    # tasks,value=read_tasks()
-    # for i in tasks:
-    #     st.checkbox(i)
-    # st.markdown(
-    #         "###### [![this is an image link](https://i.imgur.com/mQAQwvt.png)](https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=686079794781-0bt8ot3ie81iii7i17far5vj4s0p20t7.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fwebmasters.readonly&state=vryYlMrqKikWGlFVwqhnMpfqr1HMiq&prompt=consent&access_type=offline)"
-    #     )
+
 def finance_managment():
     global app_name
     st.title(app_name)
@@ -566,29 +542,7 @@ def login():
         st.error('Username/password is incorrect')
     elif authentication_status == None:
         st.warning('Please enter your username and password')
-    # if st.button('Register'):
-    #     st.write('Hello There')
-    #     try:
-    #         if authenticator.register_user('Register user', preauthorization=False):
-    #             st.success('User registered successfully')
-    #             main_page()
-    #     except Exception as e:
-    #         st.error(e)
-
 
 
 
 login()
-# if st.session_state["authentication_status"]:
-#     authenticator.logout('Logout', 'main')
-#     st.write(f'Welcome *{st.session_state["name"]}*')
-#     st.title('Some content')
-# elif st.session_state["authentication_status"] == False:
-#     st.error('Username/password is incorrect')
-# elif st.session_state["authentication_status"] == None:
-#     st.warning('Please enter your username and password')
-# try:
-#     if authenticator.register_user('Register user', preauthorization=False):
-#         st.success('User registered successfully')
-# except Exception as e:
-#     st.error(e)
