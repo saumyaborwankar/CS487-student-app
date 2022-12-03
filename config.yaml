@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    sborwankar@hawk.iit.edu:
+      email: sborwankar@hawk.iit.edu
+      name: Saumya Borwankar
+      password: '$2b$12$45qjmf5AO7YbvGs48zsQfOn02OW51pYH/HLqrKHorDr8OoV9JtKPe' #123
+    rbriggs:
+      email: rbriggs@gmail.com
+      name: Rebecca Briggs
+      password: '$2b$12$UR5V07Gwj87kKQbpGfWjXeAav8C3vOoMckb9o2A9BlSl3Xb6fxv/i' #456
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+preauthorized:
+  emails:
+  - melsby@gmail.com
